@@ -7,13 +7,13 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
-	      <link rel="stylesheet" href="./styles/style.css">
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	      <link rel="stylesheet" href="../styles/style.css">
     </head>
     <body>
 
         <div class="navbar navbar-default navbar-fixed-top visible-xs">
-            <a href="./" class="navbar-brand">client documentation</a>
+            <a href="../" class="navbar-brand">client documentation</a>
             <button type="button" class="btn btn-default btn-menu fa fa-bars" id="btn-menu"></button>
         </div>
 
@@ -679,27 +679,398 @@
 </nav>
                </div>
                <!-- START CONTENT -->
-               <div class="content getting-started">
+               <div class="content component">
                    <div class="content-data">
 
-<h1 id="client">Client</h1>
-<p>This project was generated with <a href="https://github.com/angular/angular-cli">Angular CLI</a> version 1.5.0.</p>
-<h2 id="development-server">Development server</h2>
-<p>Run <code>ng serve</code> for a dev server. Navigate to <code>http://localhost:4200/</code>. The app will automatically reload if you change any of the source files.</p>
-<h2 id="code-scaffolding">Code scaffolding</h2>
-<p>Run <code>ng generate component component-name</code> to generate a new component. You can also use <code>ng generate directive|pipe|service|class|guard|interface|enum|module</code>.</p>
-<h2 id="build">Build</h2>
-<p>Run <code>ng build</code> to build the project. The build artifacts will be stored in the <code>dist/</code> directory. Use the <code>-prod</code> flag for a production build.</p>
-<h2 id="running-unit-tests">Running unit tests</h2>
-<p>Run <code>ng test</code> to execute the unit tests via <a href="https://karma-runner.github.io">Karma</a>.</p>
-<h2 id="running-end-to-end-tests">Running end-to-end tests</h2>
-<p>Run <code>ng e2e</code> to execute the end-to-end tests via <a href="http://www.protractortest.org/">Protractor</a>.</p>
-<h2 id="further-help">Further help</h2>
-<p>To get more help on the Angular CLI use <code>ng help</code> or go check out the <a href="https://github.com/angular/angular-cli/blob/master/README.md">Angular CLI README</a>.</p>
+
+
+
+<ol class="breadcrumb">
+  <li>Components</li>
+  <li>ErrorComponent</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+    <li class="active">
+        <a href="#info" id="info-tab" role="tab" data-toggle="tab" data-link="info">Info</a>
+    </li>
+
+    <li>
+        <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+    </li>
+
+    <li>
+        <a href="#templateData" role="tab" id="templateData-tab" data-toggle="tab" data-link="template">Template</a>
+    </li>
+    <li>
+        <a href="#tree" role="tab" id="tree-tab" data-toggle="tab" data-link="dom-tree">DOM Tree</a>
+    </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info"><p class="comment">
+    <h3>File</h3>
+</p>
+<p class="comment">
+    <code>src/app/components/github/error/error.component.ts</code>
+</p>
+
+
+
+    <p class="comment">
+        <h3>Implements</h3>
+    </p>
+    <p class="comment">
+                <code><a href="https://angular.io/api/core/OnInit" target="_blank" >OnInit</a></code>
+    </p>
+
+
+<section>
+    <h3>Metadata</h3>
+    <table class="table table-sm table-hover">
+        <tbody>
 
 
 
 
+
+
+
+
+
+
+
+            <tr>
+                <td class="col-md-3">selector</td>
+                <td class="col-md-9"><code>app-error</code></td>
+            </tr>
+
+            <tr>
+                <td class="col-md-3">styleUrls</td>
+                <td class="col-md-9"><code>error.component.css</code></td>
+            </tr>
+
+
+
+            <tr>
+                <td class="col-md-3">templateUrl</td>
+                <td class="col-md-9"><code>./error.component.html</code></td>
+            </tr>
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Properties</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#modalActions">modalActions</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#closeModal">closeModal</a>
+                            </li>
+                            <li>
+                                <a href="#ngOnInit">ngOnInit</a>
+                            </li>
+                            <li>
+                                <a href="#openModal">openModal</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor()</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="11" class="link-to-prism">src/app/components/github/error/error.component.ts:11</a></div>
+                            </td>
+                        </tr>
+
+            </tbody>
+        </table>
+</section>
+
+
+
+
+
+    <section>
+    
+        <h3 id="methods">
+            Methods
+        </h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="closeModal"></a>
+                        <span class="name">
+                            <b>
+                            closeModal
+                            </b>
+                            <a href="#closeModal"><span class="fa fa-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+<code>closeModal()</code>
+                    </td>
+                </tr>
+
+
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="22" class="link-to-prism">src/app/components/github/error/error.component.ts:22</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+
+                            <div class="io-description">
+                                <b>Returns : </b>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="ngOnInit"></a>
+                        <span class="name">
+                            <b>
+                            ngOnInit
+                            </b>
+                            <a href="#ngOnInit"><span class="fa fa-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+<code>ngOnInit()</code>
+                    </td>
+                </tr>
+
+
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="15" class="link-to-prism">src/app/components/github/error/error.component.ts:15</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+
+                            <div class="io-description">
+                                <b>Returns : </b>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="openModal"></a>
+                        <span class="name">
+                            <b>
+                            openModal
+                            </b>
+                            <a href="#openModal"><span class="fa fa-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+<code>openModal()</code>
+                    </td>
+                </tr>
+
+
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="18" class="link-to-prism">src/app/components/github/error/error.component.ts:18</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+
+                            <div class="io-description">
+                                <b>Returns : </b>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+    <section>
+    
+        <h3 id="inputs">
+            Properties
+        </h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="modalActions"></a>
+                        <span class="name">
+                            <b>
+                            modalActions
+                            </b>
+                            <a href="#modalActions"><span class="fa fa-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <code>modalActions:     <code></code>
+</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>new EventEmitter&lt;string|MaterializeAction&gt;()</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="11" class="link-to-prism">src/app/components/github/error/error.component.ts:11</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+</section>
+
+</div>
+
+
+    <div class="tab-pane fade tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import {Component, EventEmitter, OnInit} from &#x27;@angular/core&#x27;;
+import {MaterializeAction} from &quot;angular2-materialize&quot;;
+
+@Component({
+  selector: &#x27;app-error&#x27;,
+  templateUrl: &#x27;./error.component.html&#x27;,
+  styleUrls: [&#x27;./error.component.css&#x27;]
+})
+export class ErrorComponent implements OnInit {
+
+  modalActions &#x3D; new EventEmitter&lt;string|MaterializeAction&gt;();
+
+  constructor() { }
+
+  ngOnInit() {
+  }
+
+  openModal(){
+    this.modalActions.emit({action:&quot;modal&quot;,params:[&#x27;open&#x27;]});
+  }
+
+  closeModal() {
+    this.modalActions.emit({action:&quot;modal&quot;,params:[&#x27;close&#x27;]});
+  }
+
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade" id="c-templateData">
+        <pre class="line-numbers"><code class="language-html">&lt;!-- Modal Structure --&gt;
+&lt;div id&#x3D;&quot;modal1&quot; class&#x3D;&quot;modal red darken-3 white-text&quot; materialize&#x3D;&quot;modal&quot; [materializeParams]&#x3D;&quot;[{dismissible: false}]&quot; [materializeActions]&#x3D;&quot;modalActions&quot;&gt;
+  &lt;div class&#x3D;&quot;modal-content&quot;&gt;
+    &lt;div class&#x3D;&quot;valign-wrapper&quot;&gt;&lt;h4&gt;&lt;i class&#x3D;&quot;medium material-icons&quot;&gt;help&lt;/i&gt;  ERROR!&lt;/h4&gt;&lt;/div&gt;
+    &lt;h5 class&#x3D;&quot;light&quot;&gt;You have entered an &lt;strong&gt;invalid Github username.&lt;/strong&gt; GitHub usernames can be identified by the URL for the users&#x27; GitHub profile.&lt;/h5&gt;
+    &lt;br /&gt;
+    &lt;h5&gt;&lt;strong&gt;For an example,&lt;/strong&gt;&lt;/h5&gt;
+    &lt;br /&gt;
+    &lt;h5 class&#x3D;&quot;light&quot;&gt;https://github.com/dasunpubudumal suggests that the users&#x27; username is &lt;strong&gt;dasunpubudumal&lt;/strong&gt;.&lt;/h5&gt;
+  &lt;/div&gt;
+  &lt;div class&#x3D;&quot;modal-footer red darken-4&quot;&gt;
+    &lt;a class&#x3D;&quot;waves-effect waves-green btn-flat white-text&quot; (click)&#x3D;&quot;closeModal()&quot;&gt;Okay&lt;/a&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade" id="c-tree">
+        <div id="tree-container"></div>
+        <div class="tree-legend">
+            <div class="title">
+                <b>Legend</b>
+            </div>
+            <div>
+                <div class="color htmlelement"></div><span>Html element</span>
+            </div>
+            <div>
+                <div class="color component"></div><span>Component</span>
+            </div>
+            <div>
+                <div class="color directive"></div><span>Html element with directive</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="../js/libs/vis.min.js"></script>
+<script src="../js/libs/htmlparser.js"></script>
+<script src="../js/libs/deep-iterator.js"></script>
+<script>
+        var COMPONENT_TEMPLATE = '<div><!-- Modal Structure --><div id="modal1" class="modal red darken-3 white-text" materialize="modal" [materializeParams]="[{dismissible: false}]" [materializeActions]="modalActions">  <div class="modal-content">    <div class="valign-wrapper"><h4><i class="medium material-icons">help</i>  ERROR!</h4></div>    <h5 class="light">You have entered an <strong>invalid Github username.</strong> GitHub usernames can be identified by the URL for the users\' GitHub profile.</h5>    <br />    <h5><strong>For an example,</strong></h5>    <br />    <h5 class="light">https://github.com/dasunpubudumal suggests that the users\' username is <strong>dasunpubudumal</strong>.</h5>  </div>  <div class="modal-footer red darken-4">    <a class="waves-effect waves-green btn-flat white-text" (click)="closeModal()">Okay</a>  </div></div></div>'
+    var COMPONENTS = [{'name': 'AboutComponent', 'selector': 'app-about'},{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'ChartComponent', 'selector': 'app-chart'},{'name': 'CommitsComponent', 'selector': 'app-commits'},{'name': 'ContributionschartComponent', 'selector': 'app-contributionschart'},{'name': 'DashboardComponent', 'selector': 'app-dashboard'},{'name': 'ErrorComponent', 'selector': 'app-error'},{'name': 'FooterComponent', 'selector': 'app-footer'},{'name': 'ForksComponent', 'selector': 'app-forks'},{'name': 'GithubComponent', 'selector': 'app-github'},{'name': 'HowtoComponent', 'selector': 'app-howto'},{'name': 'IssuesComponent', 'selector': 'app-issues'},{'name': 'MentionsComponent', 'selector': 'app-mentions'},{'name': 'OrganizationsComponent', 'selector': 'app-organizations'},{'name': 'PreloaderComponent', 'selector': 'app-preloader'},{'name': 'ReputationComponent', 'selector': 'app-reputation'},{'name': 'SearchComponent', 'selector': 'app-search'},{'name': 'StackerrorComponent', 'selector': 'app-stackerror'},{'name': 'StackoverflowComponent', 'selector': 'app-stackoverflow'},{'name': 'StarcountComponent', 'selector': 'app-starcount'},{'name': 'TagsComponent', 'selector': 'app-tags'},{'name': 'TempComponent', 'selector': 'ng4-twitter-timeline'},{'name': 'ToptagsComponent', 'selector': 'app-toptags'},{'name': 'TwitterComponent', 'selector': 'app-twitter'},{'name': 'TwitterdashboardComponent', 'selector': 'app-twitterdashboard'},{'name': 'TwitterfollowersComponent', 'selector': 'app-twitterfollowers'},{'name': 'TwitterrealfollowersComponent', 'selector': 'app-twitterrealfollowers'},{'name': 'TwittertimelineComponent', 'selector': 'app-twittertimeline'},{'name': 'WatchersComponent', 'selector': 'app-watchers'},{'name': 'WordcloudComponent', 'selector': 'app-wordcloud'}];
+    var DIRECTIVES = [];
+    var ACTUAL_COMPONENT = {'name': 'ErrorComponent'};
+</script>
+<script src="../js/tree.js"></script>
 
 
 
@@ -725,29 +1096,29 @@
            </div>
        </div>
 
-       <script src="./js/libs/bootstrap-native.js"></script>
+       <script src="../js/libs/bootstrap-native.js"></script>
 
-       <script src="./js/libs/es6-shim.min.js"></script>
-       <script src="./js/libs/EventDispatcher.js"></script>
-       <script src="./js/libs/promise.min.js"></script>
-       <script src="./js/libs/zepto.min.js"></script>
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
 
-       <script src="./js/compodoc.js"></script>
+       <script src="../js/compodoc.js"></script>
 
         <script>
-            var COMPODOC_CURRENT_PAGE_DEPTH = 0;
-            var COMPODOC_CURRENT_PAGE_URL = 'index.html';
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_URL = 'ErrorComponent.html';
         </script>
 
-       <script src="./js/search/search.js"></script>
-       <script src="./js/search/lunr.min.js"></script>
-       <script src="./js/search/search-lunr.js"></script>
+       <script src="../js/search/search.js"></script>
+       <script src="../js/search/lunr.min.js"></script>
+       <script src="../js/search/search-lunr.js"></script>
 
-       <script src="./js/tabs.js"></script>
-       <script src="./js/menu.js"></script>
-       <script src="./js/libs/prism.js"></script>
-       <script src="./js/sourceCode.js"></script>
-       <script src="./js/search/search_index.js"></script>
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+       <script src="../js/search/search_index.js"></script>
 
 
     </body>

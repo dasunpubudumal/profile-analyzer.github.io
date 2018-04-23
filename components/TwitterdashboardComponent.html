@@ -7,13 +7,13 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
-	      <link rel="stylesheet" href="./styles/style.css">
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	      <link rel="stylesheet" href="../styles/style.css">
     </head>
     <body>
 
         <div class="navbar navbar-default navbar-fixed-top visible-xs">
-            <a href="./" class="navbar-brand">client documentation</a>
+            <a href="../" class="navbar-brand">client documentation</a>
             <button type="button" class="btn btn-default btn-menu fa fa-bars" id="btn-menu"></button>
         </div>
 
@@ -679,27 +679,329 @@
 </nav>
                </div>
                <!-- START CONTENT -->
-               <div class="content getting-started">
+               <div class="content component">
                    <div class="content-data">
 
-<h1 id="client">Client</h1>
-<p>This project was generated with <a href="https://github.com/angular/angular-cli">Angular CLI</a> version 1.5.0.</p>
-<h2 id="development-server">Development server</h2>
-<p>Run <code>ng serve</code> for a dev server. Navigate to <code>http://localhost:4200/</code>. The app will automatically reload if you change any of the source files.</p>
-<h2 id="code-scaffolding">Code scaffolding</h2>
-<p>Run <code>ng generate component component-name</code> to generate a new component. You can also use <code>ng generate directive|pipe|service|class|guard|interface|enum|module</code>.</p>
-<h2 id="build">Build</h2>
-<p>Run <code>ng build</code> to build the project. The build artifacts will be stored in the <code>dist/</code> directory. Use the <code>-prod</code> flag for a production build.</p>
-<h2 id="running-unit-tests">Running unit tests</h2>
-<p>Run <code>ng test</code> to execute the unit tests via <a href="https://karma-runner.github.io">Karma</a>.</p>
-<h2 id="running-end-to-end-tests">Running end-to-end tests</h2>
-<p>Run <code>ng e2e</code> to execute the end-to-end tests via <a href="http://www.protractortest.org/">Protractor</a>.</p>
-<h2 id="further-help">Further help</h2>
-<p>To get more help on the Angular CLI use <code>ng help</code> or go check out the <a href="https://github.com/angular/angular-cli/blob/master/README.md">Angular CLI README</a>.</p>
+
+
+
+<ol class="breadcrumb">
+  <li>Components</li>
+  <li>TwitterdashboardComponent</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+    <li class="active">
+        <a href="#info" id="info-tab" role="tab" data-toggle="tab" data-link="info">Info</a>
+    </li>
+
+    <li>
+        <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+    </li>
+
+    <li>
+        <a href="#templateData" role="tab" id="templateData-tab" data-toggle="tab" data-link="template">Template</a>
+    </li>
+    <li>
+        <a href="#tree" role="tab" id="tree-tab" data-toggle="tab" data-link="dom-tree">DOM Tree</a>
+    </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info"><p class="comment">
+    <h3>File</h3>
+</p>
+<p class="comment">
+    <code>src/app/components/twitter/twitterdashboard/twitterdashboard.component.ts</code>
+</p>
+
+
+
+    <p class="comment">
+        <h3>Implements</h3>
+    </p>
+    <p class="comment">
+                <code><a href="https://angular.io/api/core/OnInit" target="_blank" >OnInit</a></code>
+    </p>
+
+
+<section>
+    <h3>Metadata</h3>
+    <table class="table table-sm table-hover">
+        <tbody>
 
 
 
 
+
+
+
+
+
+
+
+            <tr>
+                <td class="col-md-3">selector</td>
+                <td class="col-md-9"><code>app-twitterdashboard</code></td>
+            </tr>
+
+            <tr>
+                <td class="col-md-3">styleUrls</td>
+                <td class="col-md-9"><code>twitterdashboard.component.css</code></td>
+            </tr>
+
+
+
+            <tr>
+                <td class="col-md-3">templateUrl</td>
+                <td class="col-md-9"><code>./twitterdashboard.component.html</code></td>
+            </tr>
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#ngOnInit">ngOnInit</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Inputs</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#user">user</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor()</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="11" class="link-to-prism">src/app/components/twitter/twitterdashboard/twitterdashboard.component.ts:11</a></div>
+                            </td>
+                        </tr>
+
+            </tbody>
+        </table>
+</section>
+
+    <section>
+    <h3 id="inputs">Inputs</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-2">
+                        <a name="user"></a>
+                        <code>user</code>
+                    </td>
+                    <td class="col-md-10">
+                            <p>
+                            <em>Type:</em>    <code><a href="../classes/User.html" target="_self" >TwitterUser</a></code>
+
+                            </p>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Defined in <a href="" data-line="11" class="link-to-prism">src/app/components/twitter/twitterdashboard/twitterdashboard.component.ts:11</a></div>
+                            </td>
+                        </tr>
+            </tbody>
+        </table>
+</section>
+
+
+
+    <section>
+    
+        <h3 id="methods">
+            Methods
+        </h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="ngOnInit"></a>
+                        <span class="name">
+                            <b>
+                            ngOnInit
+                            </b>
+                            <a href="#ngOnInit"><span class="fa fa-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+<code>ngOnInit()</code>
+                    </td>
+                </tr>
+
+
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="15" class="link-to-prism">src/app/components/twitter/twitterdashboard/twitterdashboard.component.ts:15</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+
+                            <div class="io-description">
+                                <b>Returns : </b>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+
+</div>
+
+
+    <div class="tab-pane fade tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import {Component, Input, OnInit} from &#x27;@angular/core&#x27;;
+import {TwitterUser} from &quot;../../models/twitter-user&quot;;
+
+@Component({
+  selector: &#x27;app-twitterdashboard&#x27;,
+  templateUrl: &#x27;./twitterdashboard.component.html&#x27;,
+  styleUrls: [&#x27;./twitterdashboard.component.css&#x27;]
+})
+export class TwitterdashboardComponent implements OnInit {
+
+  @Input() user: TwitterUser;
+
+  constructor() { }
+
+  ngOnInit() {
+  }
+
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade" id="c-templateData">
+        <pre class="line-numbers"><code class="language-html">&lt;div class&#x3D;&quot;row&quot;&gt;
+  &lt;div class&#x3D;&quot;col s12 m12 l4 xl4&quot; *ngIf&#x3D;&quot;user.followersCount &gt; 0&quot;&gt;
+    &lt;div class&#x3D;&quot;card green darken-4&quot;&gt;
+      &lt;div class&#x3D;&quot;card-content white-text&quot;&gt;
+        &lt;div class&#x3D;&quot;row&quot;&gt;
+          &lt;div class&#x3D;&quot;col l4 xl4&quot;&gt;
+            &lt;i class&#x3D;&quot;large material-icons&quot;&gt;favorite&lt;/i&gt;
+          &lt;/div&gt;
+          &lt;div class&#x3D;&quot;col l8 xl8&quot;&gt;
+            &lt;span class&#x3D;&quot;card-title&quot;&gt;&lt;strong&gt;&lt;p class&#x3D;&quot;center-align&quot;&gt;Followers&lt;/p&gt;&lt;/strong&gt;&lt;/span&gt;
+            &lt;div class&#x3D;&quot;container&quot; align&#x3D;&quot;center&quot;&gt;
+            	&lt;h5 class&#x3D;&quot;center-align&quot;&gt;&lt;strong&gt;{{user.followersCount}}&lt;/strong&gt;&lt;/h5&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class&#x3D;&quot;col s12 m12 l4 xl4&quot; *ngIf&#x3D;&quot;user.statusesCount &gt; 0&quot;&gt;
+    &lt;div class&#x3D;&quot;card teal darken-4&quot;&gt;
+      &lt;div class&#x3D;&quot;card-content white-text&quot;&gt;
+        &lt;div class&#x3D;&quot;row&quot;&gt;
+          &lt;div class&#x3D;&quot;col l4 xl4&quot;&gt;
+            &lt;i class&#x3D;&quot;large material-icons&quot;&gt;favorite_border&lt;/i&gt;
+          &lt;/div&gt;
+          &lt;div class&#x3D;&quot;col l8 xl8&quot;&gt;
+            &lt;span class&#x3D;&quot;card-title&quot;&gt;&lt;strong&gt;&lt;p class&#x3D;&quot;center-align&quot;&gt;Statuses&lt;/p&gt;&lt;/strong&gt;&lt;/span&gt;
+            &lt;h4 class&#x3D;&quot;center-align&quot;&gt;&lt;strong&gt;{{user.statusesCount}}&lt;/strong&gt;&lt;/h4&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class&#x3D;&quot;col s12 m12 l4 xl4&quot; *ngIf&#x3D;&quot;user.friendsCount &gt; 0&quot;&gt;
+    &lt;div class&#x3D;&quot;card blue-grey darken-4&quot;&gt;
+      &lt;div class&#x3D;&quot;card-content white-text&quot;&gt;
+        &lt;div class&#x3D;&quot;row&quot;&gt;
+          &lt;div class&#x3D;&quot;col l4 xl4&quot;&gt;
+            &lt;i class&#x3D;&quot;large material-icons&quot;&gt;insert_emoticon&lt;/i&gt;
+          &lt;/div&gt;
+          &lt;div class&#x3D;&quot;col l8 xl8&quot;&gt;
+            &lt;span class&#x3D;&quot;card-title&quot;&gt;&lt;strong&gt;&lt;p class&#x3D;&quot;center-align&quot;&gt;Friends&lt;/p&gt;&lt;/strong&gt;&lt;/span&gt;
+            &lt;h4 class&#x3D;&quot;center-align&quot;&gt;&lt;strong&gt;{{user.friendsCount}}&lt;/strong&gt;&lt;/h4&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade" id="c-tree">
+        <div id="tree-container"></div>
+        <div class="tree-legend">
+            <div class="title">
+                <b>Legend</b>
+            </div>
+            <div>
+                <div class="color htmlelement"></div><span>Html element</span>
+            </div>
+            <div>
+                <div class="color component"></div><span>Component</span>
+            </div>
+            <div>
+                <div class="color directive"></div><span>Html element with directive</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="../js/libs/vis.min.js"></script>
+<script src="../js/libs/htmlparser.js"></script>
+<script src="../js/libs/deep-iterator.js"></script>
+<script>
+        var COMPONENT_TEMPLATE = '<div><div class="row">  <div class="col s12 m12 l4 xl4" *ngIf="user.followersCount > 0">    <div class="card green darken-4">      <div class="card-content white-text">        <div class="row">          <div class="col l4 xl4">            <i class="large material-icons">favorite</i>          </div>          <div class="col l8 xl8">            <span class="card-title"><strong><p class="center-align">Followers</p></strong></span>            <div class="container" align="center">            	<h5 class="center-align"><strong>{{user.followersCount}}</strong></h5>            </div>          </div>        </div>      </div>    </div>  </div>  <div class="col s12 m12 l4 xl4" *ngIf="user.statusesCount > 0">    <div class="card teal darken-4">      <div class="card-content white-text">        <div class="row">          <div class="col l4 xl4">            <i class="large material-icons">favorite_border</i>          </div>          <div class="col l8 xl8">            <span class="card-title"><strong><p class="center-align">Statuses</p></strong></span>            <h4 class="center-align"><strong>{{user.statusesCount}}</strong></h4>          </div>        </div>      </div>    </div>  </div>  <div class="col s12 m12 l4 xl4" *ngIf="user.friendsCount > 0">    <div class="card blue-grey darken-4">      <div class="card-content white-text">        <div class="row">          <div class="col l4 xl4">            <i class="large material-icons">insert_emoticon</i>          </div>          <div class="col l8 xl8">            <span class="card-title"><strong><p class="center-align">Friends</p></strong></span>            <h4 class="center-align"><strong>{{user.friendsCount}}</strong></h4>          </div>        </div>      </div>    </div>  </div></div></div>'
+    var COMPONENTS = [{'name': 'AboutComponent', 'selector': 'app-about'},{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'ChartComponent', 'selector': 'app-chart'},{'name': 'CommitsComponent', 'selector': 'app-commits'},{'name': 'ContributionschartComponent', 'selector': 'app-contributionschart'},{'name': 'DashboardComponent', 'selector': 'app-dashboard'},{'name': 'ErrorComponent', 'selector': 'app-error'},{'name': 'FooterComponent', 'selector': 'app-footer'},{'name': 'ForksComponent', 'selector': 'app-forks'},{'name': 'GithubComponent', 'selector': 'app-github'},{'name': 'HowtoComponent', 'selector': 'app-howto'},{'name': 'IssuesComponent', 'selector': 'app-issues'},{'name': 'MentionsComponent', 'selector': 'app-mentions'},{'name': 'OrganizationsComponent', 'selector': 'app-organizations'},{'name': 'PreloaderComponent', 'selector': 'app-preloader'},{'name': 'ReputationComponent', 'selector': 'app-reputation'},{'name': 'SearchComponent', 'selector': 'app-search'},{'name': 'StackerrorComponent', 'selector': 'app-stackerror'},{'name': 'StackoverflowComponent', 'selector': 'app-stackoverflow'},{'name': 'StarcountComponent', 'selector': 'app-starcount'},{'name': 'TagsComponent', 'selector': 'app-tags'},{'name': 'TempComponent', 'selector': 'ng4-twitter-timeline'},{'name': 'ToptagsComponent', 'selector': 'app-toptags'},{'name': 'TwitterComponent', 'selector': 'app-twitter'},{'name': 'TwitterdashboardComponent', 'selector': 'app-twitterdashboard'},{'name': 'TwitterfollowersComponent', 'selector': 'app-twitterfollowers'},{'name': 'TwitterrealfollowersComponent', 'selector': 'app-twitterrealfollowers'},{'name': 'TwittertimelineComponent', 'selector': 'app-twittertimeline'},{'name': 'WatchersComponent', 'selector': 'app-watchers'},{'name': 'WordcloudComponent', 'selector': 'app-wordcloud'}];
+    var DIRECTIVES = [];
+    var ACTUAL_COMPONENT = {'name': 'TwitterdashboardComponent'};
+</script>
+<script src="../js/tree.js"></script>
 
 
 
@@ -725,29 +1027,29 @@
            </div>
        </div>
 
-       <script src="./js/libs/bootstrap-native.js"></script>
+       <script src="../js/libs/bootstrap-native.js"></script>
 
-       <script src="./js/libs/es6-shim.min.js"></script>
-       <script src="./js/libs/EventDispatcher.js"></script>
-       <script src="./js/libs/promise.min.js"></script>
-       <script src="./js/libs/zepto.min.js"></script>
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
 
-       <script src="./js/compodoc.js"></script>
+       <script src="../js/compodoc.js"></script>
 
         <script>
-            var COMPODOC_CURRENT_PAGE_DEPTH = 0;
-            var COMPODOC_CURRENT_PAGE_URL = 'index.html';
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_URL = 'TwitterdashboardComponent.html';
         </script>
 
-       <script src="./js/search/search.js"></script>
-       <script src="./js/search/lunr.min.js"></script>
-       <script src="./js/search/search-lunr.js"></script>
+       <script src="../js/search/search.js"></script>
+       <script src="../js/search/lunr.min.js"></script>
+       <script src="../js/search/search-lunr.js"></script>
 
-       <script src="./js/tabs.js"></script>
-       <script src="./js/menu.js"></script>
-       <script src="./js/libs/prism.js"></script>
-       <script src="./js/sourceCode.js"></script>
-       <script src="./js/search/search_index.js"></script>
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+       <script src="../js/search/search_index.js"></script>
 
 
     </body>
